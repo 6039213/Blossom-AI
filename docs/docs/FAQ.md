@@ -13,7 +13,7 @@ For the best experience with Blossom AI, we recommend using the following models
     - **Qwen 2.5 Coder 32b**: Best model for self-hosting with reasonable hardware requirements
 
     !!! warning
-        Models with less than 7b parameters typically lack the capability to properly interact with bolt!
+        Models with less than 7b parameters typically lack the capability to properly interact with Blossom AI!
 
 ## Best Practices
 
@@ -88,7 +88,7 @@ You will need to make sure you have the latest version of Visual Studio C++ inst
 ## Get Help & Support
 
 !!! tip "Community Support"
-[Join the Blossom AI Community](https://thinktank.ottomator.ai/c/bolt-diy/17){target=\_blank} for discussions and help
+[Join the Blossom AI Community](https://thinktank.ottomator.ai/c/Blossom AI-diy/17){target=\_blank} for discussions and help
 
 !!! bug "Report Issues"
 [Open an Issue](https://github.com/stackblitz-labs/blossom-ai/issues/19){target=\_blank} in our GitHub Repository
