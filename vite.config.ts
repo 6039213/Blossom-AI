@@ -57,7 +57,7 @@ const getPackageJson = () => {
     };
   } catch {
     return {
-      name: 'bolt.diy',
+      name: 'blossom-ai',
       description: 'A DIY LLM interface',
       license: 'MIT',
       dependencies: {},

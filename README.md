@@ -1,6 +1,6 @@
 # Blossom AI
 
-Blossom AI is a simplified fork of the Bolt project, providing an AI-powered builder under the Blossom brand.
+Blossom AI is an AI-powered builder that helps you scaffold and manage projects quickly.
 
 ## Requirements
 - Node.js 20+
