@@ -179,9 +179,15 @@ export const ChatImpl = memo(
           action: 'request',
           error: e.message,
         });
-        toast.error(
-          'There was an error processing your request: ' + (e.message ? e.message : 'No details were returned'),
-        );
+        if (e.message?.includes('API key')) {
+          toast.error('Missing or invalid API key. Please configure your provider API key in Settings.');
+        } else {
+          toast.error(
+            'There was an error processing your request: ' + (e.message ? e.message : 'No details were returned'),
+          );
+        }
+        stop();
+        setFakeLoading(false);
       },
       onFinish: (message, response) => {
         const usage = response.usage;
