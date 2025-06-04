@@ -382,6 +382,12 @@ export const Menu = () => {
                 <span className={selectionMode ? 'i-ph:x h-4 w-4' : 'i-ph:check-square h-4 w-4'} />
               </button>
             </div>
+            <nav className="flex flex-col gap-1 text-gray-700 dark:text-gray-300 pt-2">
+              <a href="/pricing" className="hover:underline">Pricing</a>
+              <a href="/dashboard" className="hover:underline">Dashboard</a>
+              <a href="/account" className="hover:underline">Account</a>
+              <a href="/support" className="hover:underline">Support</a>
+            </nav>
             <div className="relative w-full">
               <div className="absolute left-3 top-1/2 -translate-y-1/2">
                 <span className="i-ph:magnifying-glass h-4 w-4 text-gray-400 dark:text-gray-500" />
