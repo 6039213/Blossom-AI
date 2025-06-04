@@ -46,13 +46,15 @@ export function useIndexedDB() {
     };
 
     initDB();
+  }, []);
 
+  useEffect(() => {
     return () => {
       if (db) {
         db.close();
       }
     };
-  }, []);
+  }, [db]);
 
   return { db, isLoading, error };
 }
