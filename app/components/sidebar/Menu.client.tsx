@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { toast } from 'react-toastify';
 import { Dialog, DialogButton, DialogDescription, DialogRoot, DialogTitle } from '~/components/ui/Dialog';
 import { ThemeSwitch } from '~/components/ui/ThemeSwitch';
-import { ControlPanel } from '~/components/@settings/core/ControlPanel';
+import { ProjectSettingsPanel } from '~/components/@settings/core/ProjectSettingsPanel';
 import { SettingsButton } from '~/components/ui/SettingsButton';
 import { Button } from '~/components/ui/Button';
 import { db, deleteById, getAll, chatId, type ChatHistoryItem, useChatHistory } from '~/lib/persistence';
@@ -382,6 +382,13 @@ export const Menu = () => {
                 <span className={selectionMode ? 'i-ph:x h-4 w-4' : 'i-ph:check-square h-4 w-4'} />
               </button>
             </div>
+            <nav className="flex flex-col gap-1 text-gray-700 dark:text-gray-300 pt-2">
+              <a href="/pricing" className="hover:underline">Pricing</a>
+              <a href="/dashboard" className="hover:underline">Dashboard</a>
+              <a href="/account" className="hover:underline">Account</a>
+              <a href="/support" className="hover:underline">Support</a>
+              <a href="/about" className="hover:underline">About</a>
+            </nav>
             <div className="relative w-full">
               <div className="absolute left-3 top-1/2 -translate-y-1/2">
                 <span className="i-ph:magnifying-glass h-4 w-4 text-gray-400 dark:text-gray-500" />
@@ -531,7 +538,7 @@ export const Menu = () => {
         </div>
       </motion.div>
 
-      <ControlPanel open={isSettingsOpen} onClose={handleSettingsClose} />
+      <ProjectSettingsPanel open={isSettingsOpen} onClose={handleSettingsClose} />
     </>
   );
 };

@@ -1,0 +1,16 @@
+import { MetaFunction } from '@remix-run/cloudflare';
+import { Header } from '~/components/header/Header';
+
+export const meta: MetaFunction = () => [{ title: 'Account - Blossom AI' }];
+
+export default function Account() {
+  return (
+    <div className="flex flex-col h-full w-full bg-bolt-elements-background-depth-1 text-bolt-elements-textPrimary">
+      <Header />
+      <main className="flex-1 p-8 animate-fade-in">
+        <h1 className="text-2xl font-bold mb-4">Account</h1>
+        <p>Manage your profile and billing.</p>
+      </main>
+    </div>
+  );
+}

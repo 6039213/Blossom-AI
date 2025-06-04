@@ -1,5 +1,5 @@
 // Core exports
-export { ControlPanel } from './core/ControlPanel';
+export { ProjectSettingsPanel } from './core/ProjectSettingsPanel';
 export type { TabType, TabVisibilityConfig } from './core/types';
 
 // Constants
