@@ -309,6 +309,10 @@ export const Menu = () => {
   };
 
   const handleSettingsClick = () => {
+    if (!profile?.username) {
+      window.location.href = '/login';
+      return;
+    }
     setIsSettingsOpen(true);
     setOpen(false);
   };
@@ -393,6 +397,20 @@ export const Menu = () => {
                 onChange={handleSearchChange}
                 aria-label="Search chats"
               />
+            </div>
+            <div className="flex gap-2">
+              <a
+                href="/login"
+                className="flex-1 text-center text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 transition-colors"
+              >
+                Login
+              </a>
+              <a
+                href="/pricing"
+                className="flex-1 text-center text-sm bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg px-4 py-2 transition-colors"
+              >
+                Pricing
+              </a>
             </div>
           </div>
           <div className="flex items-center justify-between text-sm px-4 py-2">
